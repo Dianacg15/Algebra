@@ -1,0 +1,26 @@
+Created on Mon Nov 16 01:54:06 2020
+
+@author: Diana
+"""
+import numpy #Biblioteca
+
+#ingresar cantidad de filas y columnas
+m1f = int(input ("Cantidad de Filas de la primera Matriz: "))
+m1c = int(input ("Cantidad de Columnas de la primera Matriz: "))
+
+#Inicia las matrices en cero
+matriz1=numpy.zeros((m1f,m1c))   
+
+#Pedir elementos 
+def matriz():
+
+    print ('\n'+"Ingrese la Matriz 1: "+ '\n')
+    for i in range(0,m1f):
+      for j in range(0,m1c):
+         matriz1[i,j] = float(input('Elemento (%d,%d): ' % (i, j)))
+         print(matriz1)  
+    
+Elemento=matriz()
+print("Determinante: "+'\n')
+#funcion que calcula el determinante
+print( numpy.linalg.det(matriz1)) 
